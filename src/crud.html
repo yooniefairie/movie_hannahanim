@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watchlist</title>
+    <script src="crud.js"></script>
+    <link rel="stylesheet" href="crud.css" />
+</head>
+<body>
+    <header>
+        <h1>CinéGems</h1>
+        <img class="filmheader" src="film2.jpg" alt="Website Image">
+    </header>
+    <section>
+        <nav class="navigation-bar">
+            <a href="index.html">Home</a>
+            <a href="year.html">Top Movies</a> 
+            <a href="comingsoon.html">Coming Soon</a>
+            <a href="crud.html">Watchlist</a>
+            <a href="quiz.html">Trivia Quiz</a>
+            <a href="index.html" class="button-home">Back</a>
+        </nav>
+        <div class="main-container" id="watchlistContainer">
+            <span style="text-align: center; font-weight: bold; font-size: 22px; margin-bottom: 30px;   font-family: Georgia, 'Times New Roman', Times, serif;"><h2>My Watchlist</h2></span>
+            <div id="status-selector">
+                <label for="status-select">Select Status:</label>
+                <select id="status-select">
+                    <option value="all">All</option>
+                    <option value="to watch">To Watch</option>
+                    <option value="watched">Watched</option>
+                    <option value="dropped">Dropped</option>
+                </select>
+            </div>
+            <ul id="watchlist">
+                <!-- Movie items will be appended here -->
+            </ul>
+        </div>
+        <div id="popup-message" class="popup-message">Successfully Deleted Movie</div>
+        <div id="delete-notes-popup" class="popup-message" style="display: none;">Successfully Deleted Notes</div>
+        <div id="saveNotesPopup" class="popup-message" style="display: none;">Successfully Save Notes</div>
+        <div id="updateNotesButton" class="popup-message" style="display: none;">Update your notes!</div>
+    </section>
+    <footer>
+        <p>&copy; 2024 CinéGems. All rights reserved. | Designed and developed by Hanna Hanim</p>
+    </footer>
+    <script src="crud.js"></script>
+</body>
+</html>

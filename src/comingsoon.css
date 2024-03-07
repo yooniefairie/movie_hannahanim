@@ -1,0 +1,239 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('1.jpg');
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding-top: 20px;
+    top: 0;
+    width: 100%;
+    background-image: url('1.jpg');
+    text-align: center;
+    font-size: 36px;
+    font-family: "Georgia", "Palatino Linotype", serif;
+}
+
+header h1 {
+    text-align: center;
+    color: #333;
+    margin: 10px;
+}
+
+.main-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+section {
+    background-color: rgba(255, 204, 93, 0.5);
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.filmheader {
+    width: 100%;
+    height: auto;
+}
+
+.navigation-bar {
+    background-color: #444;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 65px;
+}
+
+.navigation-bar a,
+.button-home {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+.navigation-bar a:hover,
+.navigation-bar .button-home:hover {
+    background-color: #555;
+}
+
+.navigation-bar a.button-home {
+    margin-left: 5px;
+    background-color: #4CAF50;
+}
+
+.main-container {
+    margin-top: 50px;
+    text-align: center;
+    margin-left: 4px;
+}
+
+#comingSoonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coming-soon-card {
+    width: 84%;
+    background-color: #9661127e;
+    /* background-image: url(tah.jpg); */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.movie-poster {
+    width: 35%;
+    max-width: 170px;
+    border-radius: 10px;
+}
+
+.movie-details {
+    width: 80%;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.teaser-button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.teaser-button:hover {
+    background-color: #555;
+}
+
+.movie-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.trailer-card {
+    background-image: url(showtime2.jpg);
+    position: relative;
+    width: 500px;
+    height: 300px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+#trailerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.trailer-card iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.trailer-unavailable {
+    color: #c4324b;
+    font-size: 25px;
+}
+
+.exit-button {
+    padding: 10px 25px;
+    background-color: #363434;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.exit-button:hover {
+    background-color: #5b5454;
+}
+
+#backToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333333e4;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none;
+    cursor: pointer;
+    z-index: 4;
+}
+
+#backToTopBtn a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #33231af0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: 6px;
+    z-index: 9999;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+}
+
+footer {
+    background-color: #2a2828;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}

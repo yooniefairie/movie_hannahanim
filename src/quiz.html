@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Quiz</title>
+    <script src="quiz.js"></script>
+    <link rel="stylesheet" href="quiz.css" />
+</head>
+<style>
+</style>
+<body>
+    <header>
+        <h1>CinéGems</h1>
+        <img class="filmheader" src="film2.jpg" alt="Website Image">
+    </header>
+    <section>
+        <nav class="navigation-bar">
+            <a href="index.html">Home</a>
+            <a href="year.html">Top Movies</a> <!-- Add this line -->
+            <a href="comingsoon.html">Coming Soon</a>
+            <a href="crud.html">Watchlist</a>
+            <a href="quiz.html">Trivia Quiz</a>
+            <a href="index.html" class="button-home">Back</a>
+        </nav>
+        <div class="subtitle">
+            <h2>Trivia Movie Quiz</h2>
+        </div>
+        <img class="cinema2" src="cinema.jpg" alt="">
+        <div class="main-container">
+
+            <div id="question"></div>
+            <div id="options"></div>
+            <div id="score"></div>
+            <button id="restartBtn" onclick="restartGame()">Try Again?</button>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 CinéGems. All rights reserved. | Designed and developed by Hanna Hanim</p>
+    </footer>
+</body>
+</html>

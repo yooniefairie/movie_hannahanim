@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="searchpage.css" />
+</head>
+<body>
+    <header>
+        <h1>CinéGems</h1>
+        <img class="filmheader" src="film2.jpg" alt="Website Image">
+    </header>
+    <section>
+        <nav class="navigation-bar">
+            <a href="index.html">Home</a>
+            <a href="year.html">Top Movies</a> 
+            <a href="comingsoon.html">Coming Soon</a>
+            <a href="crud.html">Watchlist</a>
+            <a href="quiz.html">Trivia Quiz</a>
+            <a href="index.html" class="button-home">Back</a>
+        </nav>
+        <div class="main-container">
+            <div class="search-container">
+                <input type="text" id="searchData" placeholder="Enter movie title">
+                <button id="searchButton">Search</button>
+            </div>
+            <ul id="watchlist"></ul>
+            <h2>Movie Search Results</h2>
+            <div class="movie-container hide search-results">
+                <!-- Movie cards will be appended here -->
+            </div>
+            <div id="noMovieFound" class="no-results">No movie found!</div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 CinéGems. All rights reserved. | Designed and developed by Hanna Hanim</p>
+    </footer>
+    <script src="searchpage.js"></script>
+</body>
+</html>

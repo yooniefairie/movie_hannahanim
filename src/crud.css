@@ -1,0 +1,247 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('1.jpg');
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding-top: 20px;
+    top: 0;
+    width: 100%;
+    background-image: url('1.jpg');
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    font-family: "Georgia", "Palatino Linotype", serif;
+}
+
+section {
+    background-color: rgba(255, 204, 93, 0.5);
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.filmheader {
+    width: 100%;
+    height: auto;
+}
+
+.navigation-bar {
+    background-color: #444;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-bar a,
+.button-home {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+.navigation-bar a:hover,
+.navigation-bar .button-home:hover {
+    background-color: #555;
+}
+
+.navigation-bar a.button-home {
+    margin-left: 5px;
+    background-color: #4CAF50;
+}
+
+.main-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    text-align: center;
+    color: #333;
+    margin: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-image: url(tah.jpg);
+}
+
+button {
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+select {
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.movie-item {
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 30px;
+    text-align: left;
+    padding-top: 10%;
+}
+
+.movie-poster {
+    max-width: 150px;
+    margin-right: 10px;
+}
+
+.title-status-container {
+    margin: 7px;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+.movie-title {
+    margin: 0;
+    margin-bottom: 8px;
+    margin-top: 50px;
+}
+
+.status-input {
+    margin-top: 10px;
+    width: 110px;
+    text-align: left;
+}
+
+.buttons-container button {
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.delete-notes-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+.buttons-container {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.notes-input {
+    width: 100%;
+    margin-right: 10px;
+    margin-bottom: 2px;
+}
+
+.save-button,
+.update-button,
+.delete-notes-button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.update-button {
+    background-color: #ff9800;
+    color: #fff;
+}
+
+.save-button:hover{
+    background-color: #3cca5e;
+}
+
+.update-button:hover{
+    background-color: rgb(236, 173, 48);
+}
+
+.delete-button {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 18%;
+    background-color: #333;
+    color: #fff;
+}
+
+.save-button {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.notes-container {
+    margin-top: 10px;
+    background-color: #f7cf8be0;
+    padding: 10px;
+    margin-right: 8px;
+}
+
+.popup-message {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #33231af0;
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: 5px;
+    z-index: 9999;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+footer {
+    background-color: #2a2828;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}

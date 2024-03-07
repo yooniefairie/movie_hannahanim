@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+    <header>
+        <h1>CinéGems</h1>
+        <img class="filmheader" src="film2.jpg" alt="Website Image">
+    </header>
+    <section>
+        <nav class="navigation-bar">
+            <a href="index.html">Home</a>
+            <a href="year.html">Top Movies</a> <!-- Add this line -->
+            <a href="comingsoon.html">Coming Soon</a>
+            <a href="crud.html">Watchlist</a>
+            <a href="quiz.html">Trivia Quiz</a>
+        </nav>
+        <div class="main-container">
+            <div class="search-container">
+                <input type="text" id="searchData" placeholder="Enter movie title">
+                <button id="searchButton">Search</button>
+            </div>
+            <h2>Top Recommendation</h2>
+            <ul class="top-picks-container">
+                <!-- Top picks cards will be appended here -->
+            </ul>
+            <h2>AWARDS GALA: 2023's WINNING MOVIE</h2>
+            <div class="awards-container" id="awards-container">
+                <!-- Winning movie cards will be appended here -->
+            </div>
+            <ul id="watchlist"></ul>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 CinéGems. All rights reserved. | Designed and developed by Hanna Hanim</p>
+    </footer>
+    <script src="crud.js"></script>
+    <script src="fetchapi.js"></script>
+</body>
+</html>

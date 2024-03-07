@@ -1,0 +1,287 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('1.jpg');
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  padding-top: 20px; 
+  top: 0; 
+  width: 100%;
+  background-image: url('1.jpg');
+  text-align: center;
+  font-size: 36px;
+  font-family: "Georgia", "Palatino Linotype", serif;
+}
+
+
+.main-container {
+  margin-top: 50px;
+  text-align: center;
+}
+
+section {
+  background-color: rgba(255, 204, 93, 0.5);
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.filmheader {
+  width: 100%;
+  height: auto;
+}
+
+header h1 {
+  text-align: center;
+  color: #333;
+  margin: 10px;
+}
+
+.navigation-bar {
+  background-color: #444;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation-bar a,
+.button-home {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+.navigation-bar a:hover,
+.navigation-bar .button-home:hover {
+  background-color: #555;
+}
+
+.navigation-bar a.button-home {
+  margin-left: 5px;
+  background-color: #4CAF50;
+}
+
+.movie-card {
+  margin-top: 10px;
+  width: 200px;
+  background-color: #f5f0e6;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+  margin-bottom: 15px;
+  padding-bottom: 6px;
+  margin-right: 10px; /* Adjust the margin between movie boxes */
+  position: relative; /* Add position relative */
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+}
+
+.movie-card img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.movie-card-content {
+  padding: 10px;
+}
+
+.movie-card h2 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.movie-card .movie-card-content {
+  padding: 10px;
+}
+
+.movie-card .movie-card-title {
+  height: 40px;
+}
+
+.movie-card .movie-card-poster {
+  height: 250px;
+}
+
+.movie-card .movie-card-button {
+  height: 40px;
+  margin: 10px 0;
+}
+
+.search-container {
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.search-container input[type="text"] {
+  padding: 12px; /* Increase padding for a slightly bigger input field */
+  border-radius: 5px;
+  border: 1px solid #7b4d0d;
+  width: 300px; /* Adjust width for the search bar */
+  height: 40px; /* Set height for search bar */
+}
+
+.search-container button {
+  padding: 12px 20px; /* Set padding for button */
+  background-color: #282626; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 39px; /* Set height for button */
+}
+
+/* Add this style for additional movie card details */
+.movie-card-details {
+  padding: 10px;
+  text-align: center;
+}
+
+.movie-card h2 {
+  margin-bottom: 5px;
+}
+
+.movie-card-button,
+.movie-card-button.teaser-button { /* Include teaser button style */
+    padding: 10px 30px;
+    background-color: #333; /* Dark color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+}
+
+.movie-card-button {
+  margin-top: auto; /* Push the button to the bottom */
+  padding: 10px 25px;
+}
+
+.movie-card-button.teaser-button {
+  background-color: #333; /* Dark color */
+}
+
+.movie-card button:hover {
+  background-color: #555; /* Darker color on hover */
+}
+
+.top-picks-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adjust the gap between movie boxes */
+    padding-bottom: 50px;
+    margin-top: 9px;
+    height: auto;
+}
+
+#awards-container {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  padding-bottom: 30px;
+  margin-top: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.top-picks-container .movie-card {
+  height: 480px; /* Adjust height as needed */
+  height: auto; /* Set height to auto for consistent height */
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #33231af0 ; /* Light pink */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+  color: #fff;
+  padding: 20px 30px;
+  border-radius: 6px;
+  z-index: 9999;
+  font-weight: bold;
+  text-align: center; /* Center align text */
+  font-size: 16px; /* Adjust font size for better readability */
+}
+
+.add-to-watchlist-button {
+  margin-left: 4px;
+  padding: 10px 30px;
+  background-color: #635b5d;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 5px;
+}
+
+.more-details-button {
+  background-color: #333; /* Set the background color */
+  color: #fff; /* Set the text color */
+  border: none; /* Remove the border */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  padding: 10px 20px; /* Adjust padding as needed */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+/* Hover effect for the button */
+.more-details-button:hover {
+  background-color: #555; /* Change background color on hover */
+}
+
+h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 31px;
+  margin-bottom: 13px;
+  margin-top: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.movie-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.awards-movie-card {
+  margin-right: 10px; /* Adjust the spacing between movie cards */
+
+}
+
+
+footer {
+  background-color: #2a2828;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: static;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+}
